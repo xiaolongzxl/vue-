@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <transition name="view" mode="out-in"><router-view></router-view></transition>
     <maintab-bar></maintab-bar>
   </div>
 </template>
@@ -15,6 +15,5 @@ export default {
 }
 </script>
 <style>
- @import url(~@/assets/css/normalize.css);
- 
+ @import url(~@/assets/css/app-animation.css);
 </style>
